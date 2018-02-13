@@ -1,0 +1,4 @@
+301   /:year/:month/:day/:slug   /blog/:slug
+
+301   /contact                   /about
+307   /external                  http://example.com
