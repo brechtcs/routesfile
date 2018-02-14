@@ -1,4 +1,8 @@
 {
+  "name": "routesfile",
+  "description": "Parse ROUTES file for static sites",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "test": "standard && tape test.js"
   },
@@ -6,5 +10,21 @@
   "devDependencies": {
     "standard": "^10.0.3",
     "tape": "^4.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brechtpm/routesfile.git"
+  },
+  "keywords": [
+    "routes",
+    "redirect",
+    "static",
+    "site"
+  ],
+  "author": "Brecht Savelkoul <brecht.savelkoul@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brechtpm/routesfile/issues"
+  },
+  "homepage": "https://github.com/brechtpm/routesfile#readme"
 }

@@ -34,8 +34,8 @@ Returns an array of route objects of the following format:
 ```js
 {
   code: 301,
-  from: /someUrl,
-  to: /otherUrl
+  from: '/someUrl',
+  to: '/otherUrl'
 }
 ```
 
