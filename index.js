@@ -5,14 +5,14 @@ var fs = require('fs')
 function parse (txt) {
   return txt.split('\n').filter(function (line) {
     return !!line
-  }).map(function (line) {
+  }).reduce(function (routes, line) {
     var match = line.match(LINE_FORMAT)
-    return {
+    routes[match[2]] = {
       code: parseInt(match[1]),
-      from: match[2],
-      to: match[3]
+      target: match[3]
     }
-  })
+    return routes
+  }, {})
 }
 
 function read (path, cb) {
